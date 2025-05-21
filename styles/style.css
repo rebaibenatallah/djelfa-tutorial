@@ -1,16 +1,4 @@
-*, *::before , *::after {
-  box-sizing: border-box;
-}
-:root {
-  --color-text: #10162f;
-  --color-background: #ffffff;
-  --color-border-primary:#10162F;
-  --color-primary:#3a10e5;
-  --color-background-current:#ffffff;
-  --color-beige: #FFF0E5;
-  --elements-headerHeight:5rem;
-  --elements-headerZ:15;
-}
+@import url('root.css');
 body {
   margin: 0;
   font-family: "Apercu", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -311,4 +299,37 @@ a {
   font-size: 1rem;
   margin: 0;
 }
+.App-Code-Example, code,pre {
+  --code-action-color:var(--color-primary);
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: var(--elem-radius);
+  font-family: var(--font-code);
+  font-size: var(--type-smaller-font-size);
+  tab-size: 4;
+  margin-top: 0;
+}
+.App-Code-Example .App-example-header{
+  align-items: baseline;
+  background-color: var(--color-background-secondary);
+  border-bottom: 1px solid var(--elem-radius);
+  border-top-left-radius: var(--elem-radius);
+  border-top-right-radius: var(--elem-radius);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: .1rem 1rem;
+}
+pre code{
+  background: none;
+  /* color: var(--text-primary); */
+  padding: 0;
+}
+.token.attr-name, .token.builtin,
+.token.class-name, .token.function, .token.inserted,
+.token.property, .token.selector{
+  color: var(--code-token-attribute-name);
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/opacity */
 /* end of AppWrapper code */

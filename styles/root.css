@@ -1,0 +1,18 @@
+*, *::before , *::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-text: #10162f;
+  --color-background: #ffffff;
+  --color-border-primary:#10162F;
+  --color-primary:#3a10e5;
+  --color-background-current:#ffffff;
+  --color-beige: #FFF0E5;
+  --color-background-secondary:#313131;
+  --text-primary:#fff;
+  --code-token-attribute-name: #ff97a0;
+  --elements-headerHeight:5rem;
+  --elements-headerZ:15;
+  --elem-radius:0.25rem;
+
+}
