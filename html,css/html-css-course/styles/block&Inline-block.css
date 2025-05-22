@@ -1,0 +1,60 @@
+.input-text{
+  display: block;
+  margin-bottom: 5px;
+}
+.text-thanks{
+  display: inline-block;
+  width: 300px;
+  vertical-align: middle;
+}
+.google-logo{
+  display: block;
+  width: 200px;
+  /* object-fit: contain; */
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+.input-search{
+  display: block;
+  border: none;
+  width: 500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+.first-name{
+  width: 75px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  border: 0.5px rgb(191, 191, 191) solid;
+  margin-bottom: 8px;
+}
+.first-name::placeholder{
+  color: rgb(191, 191, 191);
+}
+.email{
+  display: block;
+  width: 179px;
+  padding: 8px 12px 8px 12px ;
+  border-radius: 5px;
+  border: 0.5px rgb(191, 191, 191) solid;
+  margin-bottom: 8px;
+}
+.email::placeholder{
+  color: rgb(191, 191, 191);
+}
+.sing-up{
+  width: 205px;
+  padding: 8px 12px 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(57, 109, 251);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}

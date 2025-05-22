@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practece</title>
+  <style>
+    /* the first */
+    .container{
+      display: grid;
+      grid-template-columns: 150px 300px;
+      margin-bottom: 40px;
+    }
+    .div-1{
+      background-color: lightblue;
+    }
+    .div-2{
+      background-color: lightpink;
+    }
+    /* the secend */
+    .container2{
+      display: grid;
+      grid-template-columns: 150px 150px 200px;
+      margin-bottom: 40px;
+    }
+    .container3{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      margin-bottom: 40px;
+    }
+    .container4{
+      display: grid;
+      grid-template-columns: 150px 1fr 2fr;
+      margin-bottom: 40px;
+    }
+    .container5{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+      row-gap: 40px;
+    }
+    .container5 div{
+      height: 200px;
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="div-1">150px</div>
+    <div class="div-2">300px <p>text</p></div>
+  </div>
+  <div class="container2">
+    <div class="div-1">150px</div>
+    <div class="div-2">150px <p>text</p></div>
+    <div class="div-1">200px</div>
+    <div class="div-2">150px</div>
+  </div>
+  <div class="container3">
+    <div class="div-1">150px</div>
+    <div class="div-2">1fr</div>
+  </div>
+  <div class="container4">
+    <div class="div-1">150px</div>
+    <div class="div-2">1fr</div>
+    <div class="div-1">2fr</div>
+  </div>
+
+  <div class="container5">
+    <div class="div-1">1fr</div>
+    <div class="div-2">1fr</div>
+    <div class="div-1">2fr</div>
+    <div class="div-2">1fr</div>
+    <div class="div-1">2fr</div>
+    <div class="div-2">1fr</div>
+  </div>
+
+</body>
+</html>
