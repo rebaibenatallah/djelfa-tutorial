@@ -1,0 +1,68 @@
+
+body{
+  padding: 20px;
+}
+p{
+  margin: 0;
+}
+*{
+  font-family: arial;
+}
+/* 1. ul css */
+ul{
+  list-style: none;
+  width: max-content;
+  /* background-color: red; */
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.269);
+}
+ul > div{
+  margin-bottom: 8px;
+  position: relative;
+}
+ul > div::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: black;
+}
+button{
+  display: grid;
+  width: 240px;
+  grid-template-columns: 24px 1fr;
+  column-gap: 5px;
+  padding: 12px 24px;
+  border: none;
+}
+button:hover p ,
+button:hover i{
+  color: aqua;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  /* vertical-align: middle; */
+  margin: auto;
+}
+.icon i {
+  font-size: 24px;
+  transition: all 0.15s;
+}
+.text  {
+  /* background-color: red; */
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+.text p {
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.15s;
+}
+
+
+/* end ul css */

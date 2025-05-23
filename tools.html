@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools</title>
+  <link rel="stylesheet" href="tools.css">
+  <style>
+    .card{
+      width: 265px;
+      padding: 0;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .card-title{
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px 5px 0px 0px;
+      background-color: #EAFDC6;
+    }
+    .card-content{
+      margin-top: 0;
+      padding: 0.7rem;
+      padding-top: 1rem;
+      padding-bottom: 0.25rem;
+    }
+    .card-continer{
+      min-height: 200px;
+    }
+    .card-continer h3 {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .card-continer span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .card-foter{
+      display: grid;
+      grid-template-columns: 24px 1fr 65px;
+      text-align: center;
+      margin: auto;
+    }
+    .card-foter i{
+      font-size: 24px;
+      vertical-align: middle;
+      margin-top: 0px;
+      background-color: aqua;
+    }
+    .card-foter p{
+      background-color: red;
+      height: 25px;
+      text-align: center;
+      /* margin-top: auto ; */
+    }
+  </style>
+</head>
+<body>
+  <ul>
+
+    <div>
+      <li>
+        <button>
+          <div class="icon">
+            <i class="ri-dashboard-line"></i>
+          </div>
+          <div class="text">
+            <p>Dashboard</p>
+          </div>
+        </button>
+      </li>
+    </div>
+
+    <div>
+      <li>
+        <button>
+          <div class="icon">
+            <i class="ri-git-repository-line"></i>
+          </div>
+          <div class="text">
+            <p>My learning</p>
+          </div>
+        </button>
+      </li>
+    </div>
+
+    <div>
+      <li>
+        <button>
+          <div class="icon">
+            <i class="ri-calendar-event-line"></i>
+          </div>
+          <div class="text">
+            <p>Events</p>
+          </div>
+        </button>
+      </li>
+    </div>
+
+    <div>
+      <li>
+        <button>
+          <div class="icon">
+            <i class="ri-list-check-3"></i>
+          </div>
+          <div class="text">
+            <p>Projects</p>
+          </div>
+        </button>
+      </li>
+    </div>
+
+    <div>
+      <li>
+        <button>
+          <div class="icon">
+            <i class="ri-list-settings-line"></i>
+          </div>
+          <div class="text">
+            <p>Workspaces</p>
+          </div>
+        </button>
+      </li>
+    </div>
+
+  </ul>
+  <div class="card">
+    <div class="card-title">
+      <span>Free course</span>
+    </div>
+    <div class="card-content">
+      <div class="card-continer">
+        <h3>Learn C#</h3>
+        <span>
+          Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+        </span>
+      </div>
+      <div class="card-foter">
+        <i class="ri-bar-chart-2-line"></i>
+        <p><strong>Beginner</strong>Friendly</p>
+        <p>17 hours</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
