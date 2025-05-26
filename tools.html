@@ -11,142 +11,435 @@
   <title>Tools</title>
   <link rel="stylesheet" href="tools.css">
   <style>
-    .card{
-      width: 265px;
-      padding: 0;
+    .list{
+      width: 870px;
+      padding: 8px;
+    }
+    .container-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid black;
+    }
+    .header-button{
+      display: flex;
+      width:max-content ;
+    }
+    .header-button button{
+      width: 120px;
+      background-color: transparent;
+      display: block;
+      transition: all 0.15s;
+    }
+    .header-button button:hover{
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    .header-button button:first-child{
+      border-bottom: 2px solid black;
+    }
+    .header-option select{
+      padding: 5px 5px 5px 5px;
+      font-size: 14px;
+      width: 170px;
+    }
+    .course{
       border: 1px solid black;
+      padding: 20px 20px 0px 20px;
+      height: 85px;
+      transition: all 2s ;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+    
+    .course.active {
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+      transition: all 0.15s ;
+
+    }
+
+    .course p{
+      text-align: start;
+    }
+    .course h3{
+      text-align: start;
+      margin: 0;
+      margin-top: 8px;
+    }
+
+    .course-body{
+      border: 1px solid black;
+      padding: 25px 25px 25px 25px ;
+      margin-top: -1px;
+      transition: all 0.25s ease-in-out;
+      height: inherit;
+      height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      border-top: none;
+      z-index: 10;
+      animation: both;
+
+    }
+    
+    .course-body.active{
+      visibility: visible;
+      height: 480px;
+    }
+
+    
+
+    .course-content{
+      border: 0.5px solid rgba(0, 0, 0, 0.21);
+      padding: 10px 20px;
       border-radius: 5px;
     }
-    .card-title{
-      padding: 0.5rem 0.7rem;
-      border-radius: 5px 5px 0px 0px;
-      background-color: #EAFDC6;
-    }
-    .card-content{
-      margin-top: 0;
-      padding: 0.7rem;
-      padding-top: 1rem;
-      padding-bottom: 0.25rem;
-    }
-    .card-continer{
-      min-height: 200px;
-    }
-    .card-continer h3 {
+
+    .course-body ul{
+      border-radius: 5px;
+      padding: 5px;
       margin: 0;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-      font-size: 18px;
+      width: 100%;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      box-shadow: none;
     }
-    .card-continer span {
-      font-size: 14px;
-      line-height: 20px;
+    
+    .course-body ul button {
+      width: 100%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      transition-delay: 0s;
+      transition-duration: 0.15s;
+      transition-property: opacity;
+      transition-timing-function: linear;
+      background-color: transparent;
+      height: 42px;
+      border-radius: 4px;
+      padding: 0px 8px ;
     }
-    .card-foter{
-      display: grid;
-      grid-template-columns: 24px 1fr 65px;
-      text-align: center;
-      margin: auto;
+
+    .course-body ul button:hover{
+      background-color: rgba(0, 0, 0, 0.064);
     }
-    .card-foter i{
+
+    .course-body  button i{
+      width: 24px;
+      height: 24px;
       font-size: 24px;
-      vertical-align: middle;
-      margin-top: 0px;
-      background-color: aqua;
+      margin-right: 10px;
+      /* background-color: lightblue; */
+      /* padding-top: 6px; */
+      /* margin-top: 6px; */
     }
-    .card-foter p{
-      background-color: red;
-      height: 25px;
+    .course-body button p{
+      width: 120px;
+      text-align: start;
+      align-items: flex-end;
+    }
+    .course-body button p:last-child{
+      flex: 1;
+    }
+    .course-bottom{
+      display: flex;
+      align-items: center;
+    }
+    .start-module{
+      border: 2px solid #3A10E5;
       text-align: center;
-      /* margin-top: auto ; */
+      display: block;
+      padding: 8px 16px;
+      width: fit-content;
+      color: #3A10E5;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;
     }
+
+    .start-module:hover{
+      background-color: #e5e5e5;
+    }
+
+    .course-bottom p {
+      color: rgb(126, 125, 125);
+      font-size: 15px;
+    }
+
+    .course-footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: lightcoral; */
+      padding: 0px 33px;
+      margin-top: 25px;
+    }
+
+    .course-footer div{
+      display: flex;
+      align-items: center;
+    }
+
+    .course-footer button{
+      border: 1px solid #3A10E5;
+      background-color: #3A10E5;
+      color: white;
+      font-size: 14px;
+      width:max-content;
+      margin-left: 18px;
+      border-radius: 4px;
+      padding: 10px  15px ;
+      transition: all 0.15s;
+    }
+
+    .course-footer button:hover{
+      opacity: 0.9;
+    }
+    
   </style>
 </head>
 <body>
-  <ul>
+  <!-- sidbar -->
+  <div class="tool">
+    <ul>
 
-    <div>
-      <li>
-        <button>
-          <div class="icon">
-            <i class="ri-dashboard-line"></i>
-          </div>
-          <div class="text">
-            <p>Dashboard</p>
-          </div>
-        </button>
-      </li>
-    </div>
-
-    <div>
-      <li>
-        <button>
-          <div class="icon">
-            <i class="ri-git-repository-line"></i>
-          </div>
-          <div class="text">
-            <p>My learning</p>
-          </div>
-        </button>
-      </li>
-    </div>
-
-    <div>
-      <li>
-        <button>
-          <div class="icon">
-            <i class="ri-calendar-event-line"></i>
-          </div>
-          <div class="text">
-            <p>Events</p>
-          </div>
-        </button>
-      </li>
-    </div>
-
-    <div>
-      <li>
-        <button>
-          <div class="icon">
-            <i class="ri-list-check-3"></i>
-          </div>
-          <div class="text">
-            <p>Projects</p>
-          </div>
-        </button>
-      </li>
-    </div>
-
-    <div>
-      <li>
-        <button>
-          <div class="icon">
-            <i class="ri-list-settings-line"></i>
-          </div>
-          <div class="text">
-            <p>Workspaces</p>
-          </div>
-        </button>
-      </li>
-    </div>
-
-  </ul>
-  <div class="card">
-    <div class="card-title">
-      <span>Free course</span>
-    </div>
-    <div class="card-content">
-      <div class="card-continer">
-        <h3>Learn C#</h3>
-        <span>
-          Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
-        </span>
+      <div>
+        <li>
+          <button class="button-sidbar">
+            <div class="icon">
+              <i class="ri-dashboard-line"></i>
+            </div>
+            <div class="text">
+              <p>Dashboard</p>
+            </div>
+          </button>
+        </li>
       </div>
-      <div class="card-foter">
-        <i class="ri-bar-chart-2-line"></i>
-        <p><strong>Beginner</strong>Friendly</p>
-        <p>17 hours</p>
+  
+      <div>
+        <li>
+          <button class="button-sidbar">
+            <div class="icon">
+              <i class="ri-git-repository-line"></i>
+            </div>
+            <div class="text">
+              <p>My learning</p>
+            </div>
+          </button>
+        </li>
+      </div>
+  
+      <div>
+        <li>
+          <button class="button-sidbar">
+            <div class="icon">
+              <i class="ri-calendar-event-line"></i>
+            </div>
+            <div class="text">
+              <p>Events</p>
+            </div>
+          </button>
+        </li>
+      </div>
+  
+      <div>
+        <li>
+          <button class="button-sidbar">
+            <div class="icon">
+              <i class="ri-list-check-3"></i>
+            </div>
+            <div class="text">
+              <p>Projects</p>
+            </div>
+          </button>
+        </li>
+      </div>
+  
+      <div>
+        <li>
+          <button class="button-sidbar">
+            <div class="icon">
+              <i class="ri-list-settings-line"></i>
+            </div>
+            <div class="text">
+              <p>Workspaces</p>
+            </div>
+          </button>
+        </li>
+      </div>
+  
+    </ul>
+  </div>
+  <!-- card -->
+  <div class="tool">
+    <div class="card">
+      <div class="card-title">
+        <span>Free course</span>
+      </div>
+      <div class="card-content">
+        <div class="card-continer">
+          <h3>Learn C#</h3>
+          <span>
+            Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+          </span>
+        </div>
+        <div class="card-foter">
+          <i class="ri-bar-chart-2-line"></i>
+          <p><strong>Beginner</strong>Friendly</p>
+          <p>17 hours</p>
+        </div>
       </div>
     </div>
   </div>
+<!-- navbar -->
+  <div class="tool">
+    <div class="header">
+      <div class="logo">
+        <a href="">
+          <img src="d-logo (2).png" alt="">
+        </a>
+      </div>
+      <ul>
+        <li>
+          My Home
+        </li>
+        <li>
+          Catalog
+          <i class="ri-arrow-down-s-fill"></i>
+        </li>
+        <li>
+          Resources
+          <i class="ri-arrow-down-s-fill"></i>
+        </li>
+        <li>
+          Community
+          <i class="ri-arrow-down-s-fill"></i>
+        </li>
+        <li>
+          Pricing
+          <i class="ri-arrow-down-s-fill"></i>
+        </li>
+        <li>
+          Career Center
+        </li>
+      </ul>
+    </div>
+  </div>  
+<!-- list corsces -->
+  <div class="tool">
+    <div class="list">
+      <div class="list-title">
+        <h2>My learning</h2>
+      </div>
+      <div class="list-container">
+        <div class="container-header">
+          <div class="header-button">
+            <button>In progress</button>
+            <button>Completed</button>
+          </div>
+          <div class="header-option">
+            <select name="" id="">
+              <option value="">Last added</option>
+              <option value="">Most progress</option>
+            </select>
+          </div>
+        </div>
+        <div class="list-content">
+          <h3>Self-enrolled</h3>
+          <button class="course" onclick="div_show()">
+            <p>Course</p>
+            <h3>Learn How to Code</h3>
+          </button>
+          <div class="course-body">
+            <div class="course-content">
+              <p>Basics of Programming</p>
+              <ul>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Article</p>
+                    <p>What is Programming?</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Variables</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Variables</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Data Types</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Data Types</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Operators</p>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <i class="ri-article-line"></i>
+                    <p>Lesson</p>
+                    <p>Operators</p>
+                  </button>
+                </li>
+              </ul>
+              <div class="course-bottom">
+                <button class="start-module">Start module practice</button>
+                <p>0/7 concepts practiced</p>
+              </div>
+            </div>
+            <div class="course-footer">
+              <div class="">
+                <p>Pin to top</p>
+              </div>
+              <div class="">
+                <p>View syllabus</p>
+                <button>Start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var course = document.querySelector('.course-body');
+    var course_button = document.querySelector('.course');
+    function div_show(){
+      if(course.classList.contains('active') ){
+        course.classList.remove('active')
+        course_button.classList.remove('active')
+      }else{
+        course.classList.add('active')
+        course_button.classList.add('active')
+      }
+    }
+  </script>
 </body>
 </html>
