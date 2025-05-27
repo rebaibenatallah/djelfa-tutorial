@@ -1,18 +1,44 @@
-*, *::before , *::after {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*, p,span{
+  font-family: roboto;
+}
+h1,h2,h3{
+  font-family: poppins,sans-serif;
 }
 :root {
-  --color-text: #10162f;
+  /* bay mode */
+  --color-text: #222222;
+  --color-text-2: #333333;
   --color-background: #ffffff;
-  --color-border-primary:#10162F;
-  --color-primary:#3a10e5;
-  --color-background-current:#ffffff;
-  --color-beige: #FFF0E5;
-  --color-background-secondary:#313131;
-  --text-primary:#fff;
-  --code-token-attribute-name: #ff97a0;
-  --elements-headerHeight:5rem;
-  --elements-headerZ:15;
-  --elem-radius:0.25rem;
-
+  --color-background-2: #f9f9f9;
+  --color-button: #007bff;
+  --color-button-2: #28a745;
+  --color-link:#0056b3;
+  --color-link-2:#1e88e5;
+  --color-border:#dddddd;
+  --color-border-2:#cccccc;
+  /* night mode */
+  --color-text-night:#e0e0e0;
+  --color-text-night-2:#ffffff;
+  --color-background-night:#181818;
+  --color-background-night-2:#121212;
+  --color-button-night:#4a90e2;
+  --color-button-night-2:#66bb6a;
+  --color-link-night:#8ab4f8;
+  --color-link-night-2:#80cbc4;
+  --color-border-night:#444444;
+  --color-border-night-2:#383838;
+}
+/* 
+headings : inter or poppins
+body text : roboto  or open sans
+code display : fira code or consolas
+buttons : source code pro  or menlo
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 24px;
 }

@@ -1,0 +1,127 @@
+.navbar{
+  position:fixed;
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border:  1px solid var(--color-border);
+  background-color: var(--color-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.135);
+  z-index: 99;
+}
+.navbar .logo{
+  display: flex;
+  justify-content: center;
+  margin-right: 18px;
+}
+.navbar .logo a {
+  display: flex;
+}
+.logo a{
+  display: flex;
+  text-decoration: none;
+}
+.logo img{
+  width: 90px;
+  object-fit: contain;
+}
+.navbar ul{
+  list-style: none;
+  width: max-content;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.navbar ul img {
+  vertical-align: middle;
+  width: 20px;
+  margin-left: 2px;
+  transition: all 0.15s;
+}
+.navbar ul img.active{
+  transform: rotate(3.142rad);
+}
+.navbar ul li {
+  color: var(--color-text);
+  font-size: 20px;
+  margin-left: 2px;
+}
+.navbar ul a{
+  color: var(--color-text);
+  text-decoration: none;
+}
+.navbar ul li:hover , .navbar ul a:hover{
+  color: var(--color-link);
+}
+.navbar ul li {
+  cursor: pointer;
+}
+.navbar .my-projects{
+  width: 800px;
+  background-color: var(--color-background-night);
+  margin-top: 270px;
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s;
+  height: 0px;
+  left: 50%;
+  top: -190px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8px;
+  padding: 8px 18px;
+  overflow: hidden;
+}
+.navbar .my-projects.active{
+  height: 300px;
+  top: -41px;
+  visibility: visible;
+}
+.navbar .my-projects h2{
+  color: var(--color-text-night);
+  margin-bottom: 8px;
+}
+.navbar .my-projects h3{
+  color: var(--color-text-night);
+  margin-bottom: 2px;
+}
+.navbar .my-projects p{
+  font-size: 16px;
+  color: var(--color-text-night-2);
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.navbar .my-projects button{
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--color-text-night);
+  border: 1px solid var(--color-text-night);
+  border-radius: 4px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.navbar .my-projects button:hover{
+  background-color: var(--color-link-2);
+}
+.navbar .my-projects a{
+  text-decoration: none;
+  transition: all 0.15s;
+  color: var(--color-text-night);
+  cursor: pointer;
+}
+.navbar .my-projects a:hover{
+  color: var(--color-link-2);
+  font-weight: 500  ;
+}
+.navbar .my-projects .description{
+  flex: 2;
+}
+.navbar .my-projects .links{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

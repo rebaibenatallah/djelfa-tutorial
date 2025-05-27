@@ -5,8 +5,210 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App</title>
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/root.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <style>
+    
+
+    .container-03{
+      background-color: lightpink;
+      width: 100%;
+      max-width: 1300px;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/d-logo (2).png" alt="">
+      </a>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+      <li onclick="navbar_href(this)">
+          Catalog
+          <img src="icons/arrow-down-fit-com.svg" alt="">          
+        </li>
+        <div class="my-projects">
+          <div class="description">
+            <h2>About WebThemez</h2>
+            <p>Webthemez is initiated to offer the best free & premium responsive website templates with modern design built with latest technologies like Bootstrap, HTML5, CSS3 and jQuery. Find your best Template or Themes from our big collection and build your professional website</p>
+            <button>Learn More</button>
+          </div>
+          <div class="links">
+            <h2>Links</h2>
+            <h3>Frontend</h3>
+            <a href="frontend.html"> HTML,CSS,JS</a>
+            <h3>Backend</h3>
+            <a>Django</a>
+            <a>SQL</a>
+          </div>
+        </div>
+      <li onclick="navbar_href(this)">
+          Resources
+          <img src="icons/arrow-down-fit-com.svg" alt="">
+      </li>
+      <li onclick="navbar_href(this)">
+          Community
+          <img src="icons/arrow-down-fit-com.svg" alt="">
+      </li>
+      <li onclick="navbar_href(this)">
+          Pricing
+          <img src="icons/arrow-down-fit-com.svg" alt="">
+      </li>
+      <li>
+        <a href="">
+          Career Center
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="container-01">
+      <!-- <p>Container 01</p> -->
+      <div class="container">
+
+        <div class="container-01-text">
+          <p>High-Level Python Web</p>
+          <h2>A Powerful Python Framework for Web Development</h2>
+          <button onclick="function_01()">Course</button>
+        </div>
+        <div class="container-01-img">
+          <img src="image/python-django.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-02">
+      <h2>Other Course</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <span>Free course</span>
+          </div>
+          <div class="card-content">
+            <div class="card-continer">
+              <h3>Learn C#</h3>
+              <span>
+                Learn Microsoft's popular C# programming language, used to make websites, mobile apps, video games, VR,...
+              </span>
+            </div>
+            <div class="card-foter">
+              <i class="ri-bar-chart-2-line"></i>
+              <p><strong>Beginner</strong>Friendly</p>
+              <p>17 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <p>Container 02</p> -->
+    </div>
+    <div class="container-03">
+      <p>Container 03</p>
+    </div>
+  </div>
+  <script src="script/navbar.js"></script>
 </body>
 </html>
