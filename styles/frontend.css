@@ -1,0 +1,76 @@
+.main{
+  background-color: var(--color-background-2);
+  display: flex;
+  justify-content: center;
+  padding: 90px 8px 20px 8px;
+}
+.main-container{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 25px;
+}
+.main-left{
+  /* height: 900px; */
+  flex: 3;
+  /* background-color: var(); */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.right-content{
+  width: 100%;
+  background-color: white;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.right-content .img-js{
+  object-fit:fill;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: -35px;
+}
+.right-content .content{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+}
+.right-content .content h3{
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+.right-content .content p{
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.right-content .content a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.15px;
+}
+.right-content .content a:hover{
+  color: var(--color-link-2);
+}
+
+.right-content .content div img{
+  height: 13px;
+  margin-left: 5px;
+  transform: rotate(-1.6rad);
+  transition: all 0.15s;
+  margin-top: 1px;
+}
+.right-content .content div a:hover img{
+  filter: invert(.5) sepia(2) saturate(4) hue-rotate(175deg) ;
+}
