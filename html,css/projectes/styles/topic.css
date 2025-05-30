@@ -311,65 +311,135 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* background-color: lightblue; */
   padding: 40px 0 70px 0;
 }
 .third-content-box .btns-category{
-  /* background-color: lightcoral; */
   display: flex;
   justify-content: center;
-  width: 100%;
+  gap: 40px;
   margin-bottom: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.058);
+  position: relative;
 }
 .third-content-box .btns-category button{
-  width: 7%;
-  min-width: 80px;
-  max-width: 110px;
+  display: block;
   background-color: transparent;
   border: none;
-  padding: 7px 0;
+  padding: 7px 15px;
   transition: .6s all;
   cursor: pointer;
+  font-size: 14px;
 }
-.third-content-box .btns-category button.active ,
-.third-content-box .btns-category button:hover{
+.third-content-box .btns-category button.active {
   color: var(--color-button);
-  border-bottom: 1px solid var(--color-button);
 }
 .third-content-box .pages{
   display: flex;
   gap: 40px;
-  /* width: 300%; */
 }
 .third-content-box .design-page{
-  background-color: seagreen;
-  display: flex;
   gap: 20px;
-  visibility: hidden;
 }
 .pages .web-design{
   margin: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.285);
 }
 .third-content-box .marketing-page{
- background-color: lightblue;
- display: flex;
  gap: 20px;
- visibility: hidden;
 }
 .third-content-box .finance-page{
- background-color: lightcoral;
- display: flex;
  gap: 20px;
 }
 .third-content-box .music-page{
- background-color: rebeccapurple;
- display: flex;
  gap: 20px;
 }
 .third-content-box .education-page{
- background-color: royalblue;
- display: flex;
  gap: 20px;
+}
+.pages .content{
+  display: none;
+  padding: 20px;
+  animation: moving .5s;
+}
+@keyframes moving {
+  from{transform: translateX(50px); opacity: 0;}
+  to{transform: translateX(0px); opacity: 1;}
+}
+.pages .content.active{
+  display: flex;
+}
+.btns-category .line{
+  border: 3px solid var(--color-button);
+  width: 78px;
+  position: absolute;
+  bottom: -3px;
+  border-radius: 10px;
+  left: 0 ;
+  transition: all .5s ease;
+}
+
+/* fourth content-box */
+.fifth-content-box{
+  background: url('../image/teamwork.jpg') no-repeat;
+  /* object-fit:contain; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
+.fifth-content-box .content{
+  display: flex;
+  background:linear-gradient(11deg,#1f5e7ce0,#80d4c9ba);
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fifth-content-box .body{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fifth-content-box .body .left{
+  /* width: 150px; */
+  background-color: lightblue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 15px;
+  gap: 100px;
+}
+.fifth-content-box .body .left::before{
+  
+}
+.fifth-content-box .body .left .icon{
+  background-color: var(--color-background-3);
+  padding: 20px 8px;
+  border-radius: 50%;
+}
+.fifth-content-box .body .left i{
+  color: white;
+  font-size: 26px;
+  border: 2px solid white;
+  padding: 12px;
+  border-radius: 50%;
+}
+.fifth-content-box .body .right{
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  padding: 30px;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.fifth-content-box h1{
+  color: white;
+}
+.fifth-content-box .text-box{
+  margin-bottom: 20px;
 }

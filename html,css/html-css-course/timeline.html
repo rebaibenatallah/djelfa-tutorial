@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>time line</title>
+  <link rel="stylesheet" href="styles/timeline.css">
+</head>
+<body>
+  <div class="timeline">
+    <!-- HTML CSS JS -->
+    <div class="timeline-component">
+      <div class="timeline-date timeline-date-right">HTML,CSS,JS</div>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-point"></div>
+    </div>
+    <div class="timeline-component timeline-component-bg">
+      <h2 class="timeline-title">FULL Project</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+      <h2 class="timeline-title">COURSE</h2>
+      <P class="timeline-paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas earum rem hic.
+      </P>
+    </div>
+    <!-- REACT JS -->
+    <div class="timeline-component timeline-component-bg">
+      <h2 class="timeline-title">FULL Project</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+      <h2 class="timeline-title">COURSE</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-point"></div>
+    </div>
+    <div class="timeline-component">
+      <div class="timeline-date ">REACT.JS</div>
+    </div>
+    <!-- DJANGO -->
+    <div class="timeline-component">
+      <div class="timeline-date timeline-date-right">DJANGO</div>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-point"></div>
+    </div>
+    <div class="timeline-component timeline-component-bg">
+      <h2 class="timeline-title">FULL Project</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+      <h2 class="timeline-title">COURSE</h2>
+      <P class="timeline-paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas earum rem hic.
+      </P>
+    </div>
+    <!-- REACT JS -->
+    <div class="timeline-component timeline-component-bg">
+      <h2 class="timeline-title">FULL Project</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+      <h2 class="timeline-title">COURSE</h2>
+      <p class="timeline-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim pariatur culpa. Molestias, velit quae!
+      </p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-point"></div>
+    </div>
+    <div class="timeline-component">
+      <div class="timeline-date ">REACT.JS</div>
+    </div>
+    <!-- <button onclick="tops()">tops</button> -->
+    <!-- <div class="timeline-point timeline-point-bottom"></div> -->
+  </div>
+  <script>
+    const point = document.querySelector('.timeline-point-bottom').classList;
+    console.log(point);
+    function tops(){
+      if(point.contains('active')){
+        point.remove('active');
+      }else{
+        point.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -9,213 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tools</title>
-  <link rel="stylesheet" href="tools.css">
+  <link rel="stylesheet" href="styles/tools.css">
   <style>
-    .list{
-      width: 870px;
-      padding: 8px;
-    }
-    .container-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid black;
-    }
-    .header-button{
-      display: flex;
-      width:max-content ;
-    }
-    .header-button button{
-      width: 120px;
-      background-color: transparent;
-      display: block;
-      transition: all 0.15s;
-    }
-    .header-button button:hover{
-      background-color: rgba(0, 0, 0, 0.05);
-    }
-    .header-button button:first-child{
-      border-bottom: 2px solid black;
-    }
-    .header-option select{
-      padding: 5px 5px 5px 5px;
-      font-size: 14px;
-      width: 170px;
-    }
-    .course{
-      border: 1px solid black;
-      height: 85px;
-      transition: all 2s ;
-      cursor: pointer;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-    }
-    
-    .course.active {
-      border-bottom: 0.5px solid rgba(0, 0, 0, 0);
-      /* border-bottom:none ; */
-      transition: all 0.15s ;
-    }
-
-    .course-button-left{
-    }
-
-    .course-button-right{
-    }
-
-    .course-button-right img {
-      height: 30px;
-      transition: all 0.5s;
-    }
-
-    .course-button-right img.active{
-      transform: rotate(3.142rad);
-    }
-
-    .course p{
-      text-align: start;
-    }
-    .course h3{
-      text-align: start;
-      margin: 0;
-      margin-top: 8px;
-    }
-
-    .course-body{
-      border: 1px solid black;
-      padding: 25px 25px 25px 25px ;
-      margin-top: -1px;
-      transition: all 0.25s ease-in-out;
-      height: inherit;
-      height: 0px;
-      overflow: hidden;
-      visibility: hidden;
-      border-top: none;
-      z-index: 10;
-      animation: both;
-
-    }
-    
-    .course-body.active{
-      visibility: visible;
-      height: 480px;
-    }
-
     
 
-    .course-content{
-      border: 0.5px solid rgba(0, 0, 0, 0.21);
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-
-    .course-body ul{
-      border-radius: 5px;
-      padding: 5px;
-      margin: 0;
-      width: 100%;
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      box-shadow: none;
-    }
-    
-    .course-body ul button {
-      width: 100%;
-      display: flex;
-      align-content: center;
-      align-items: center;
-      transition-delay: 0s;
-      transition-duration: 0.15s;
-      transition-property: opacity;
-      transition-timing-function: linear;
-      background-color: transparent;
-      height: 42px;
-      border-radius: 4px;
-      padding: 0px 8px ;
-    }
-
-    .course-body ul button:hover{
-      background-color: rgba(0, 0, 0, 0.064);
-    }
-
-    .course-body  button i{
-      width: 24px;
-      height: 24px;
-      font-size: 24px;
-      margin-right: 10px;
-      /* background-color: lightblue; */
-      /* padding-top: 6px; */
-      /* margin-top: 6px; */
-    }
-    .course-body button p{
-      width: 120px;
-      text-align: start;
-      align-items: flex-end;
-    }
-    .course-body button p:last-child{
-      flex: 1;
-    }
-    .course-bottom{
-      display: flex;
-      align-items: center;
-    }
-    .start-module{
-      border: 2px solid #3A10E5;
-      text-align: center;
-      display: block;
-      padding: 8px 16px;
-      width: fit-content;
-      color: #3A10E5;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 4px;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-
-    .start-module:hover{
-      background-color: #e5e5e5;
-    }
-
-    .course-bottom p {
-      color: rgb(126, 125, 125);
-      font-size: 15px;
-    }
-
-    .course-footer{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      /* background-color: lightcoral; */
-      padding: 0px 33px;
-      margin-top: 25px;
-    }
-
-    .course-footer div{
-      display: flex;
-      align-items: center;
-    }
-
-    .course-footer button{
-      border: 1px solid #3A10E5;
-      background-color: #3A10E5;
-      color: white;
-      font-size: 14px;
-      width:max-content;
-      margin-left: 18px;
-      border-radius: 4px;
-      padding: 10px  15px ;
-      transition: all 0.15s;
-    }
-
-    .course-footer button:hover{
-      opacity: 0.9;
-    }
-    
   </style>
 </head>
 <body>
@@ -316,7 +113,7 @@
     <div class="header">
       <div class="logo">
         <a href="">
-          <img src="d-logo (2).png" alt="">
+          <!-- <img src="d-logo (2).png" alt=""> -->
         </a>
       </div>
       <ul>
@@ -372,7 +169,7 @@
               <h3>Learn How to Code</h3>
             </div>
             <div class="course-button-right">
-              <img class="img-button" src="icons/down-arrow.svg" alt="">
+              <!-- <img class="img-button" src="icons/down-arrow.svg" alt=""> -->
             </div>
           </button>
           <div class="course-body">
@@ -448,6 +245,57 @@
       </div>
     </div>
   </div>
+<!-- Tabs -->
+  <div class="tool-tabs">
+    <div class="container">
+      <div class="tab-box">
+        <button class="tab-btn active">Home</button>
+        <button class="tab-btn">About</button>
+        <button class="tab-btn">Blogs</button>
+        <button class="tab-btn">Contact us</button>
+        <div class="line"></div>
+      </div>
+      <div class="content-box">
+        <div class="content active">
+          <h2>Home</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam repellat dicta illum commodi voluptatibus. Atque dolore praesentium repellat aut ex molestiae dolorem, possimus iure ipsum eius, vero deleniti in magni! Obcaecati molestiae magni iste voluptatibus?</p>
+        </div>
+        <div class="content">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam repellat dicta illum commodi voluptatibus. Atque dolore praesentium repellat aut ex molestiae dolorem, possimus iure ipsum eius, vero deleniti in magni! Obcaecati molestiae magni iste voluptatibus?</p>
+        </div>
+        <div class="content">
+          <h2>Blogs</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam repellat dicta illum commodi voluptatibus. Atque dolore praesentium repellat aut ex molestiae dolorem, possimus iure ipsum eius, vero deleniti in magni! Obcaecati molestiae magni iste voluptatibus?</p>
+        </div>
+        <div class="content">
+          <h2>Contact us</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam repellat dicta illum commodi voluptatibus. Atque dolore praesentium repellat aut ex molestiae dolorem, possimus iure ipsum eius, vero deleniti in magni! Obcaecati molestiae magni iste voluptatibus?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tabs script -->
+  <script>
+    const tabs= document.querySelectorAll('.tab-btn');
+    const contents= document.querySelectorAll('.content-box .content');
+    // console.log(tabs);
+    // console.log(contents);
+    tabs.forEach((tab,index) =>{
+      tab.addEventListener('click',(e)=>{
+        tabs.forEach((tab)=>{ tab.classList.remove('active');});
+        tab.classList.add('active');
+        var line=document.querySelector('.line');
+        line.style.width = e.target.offsetWidth + "px";
+        line.style.left=e.target.offsetLeft + "px";
+        contents.forEach((content)=>{
+          content.classList.remove('active');
+        });
+        contents[index].classList.add('active');
+      });
+    });
+  </script>
+
   <script>
     var course = document.querySelector('.course-body');
     var course_button = document.querySelector('.course');
