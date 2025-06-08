@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts</title>
+  <link rel="stylesheet" href="styles/charts.css">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      max-width: 992px;
+      background: white;
+      gap: 20px;
+      margin: 16px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.26);
+      padding: 20px;
+      
+    }
+    .chart{
+      height: 500px;
+      width: 100%;
+    }
+    .description-content{
+      grid-column: 1/-1;
+    }
+    @media (max-width:992px) {
+      .main{
+        width: 97%;
+        /* grid-template-columns: 1fr; */
+      }
+      
+    }
+    @media (max-width:580px) {
+        .chart{
+          width: 370px;
+        }
+      }
+    .description{
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="description-content">
+      <h1>Using Google Charts</h1>
+      <p>Google Charts provides a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart gallery provides a large number of ready-to-use chart types.</p>
+      <p>The most common way to use Google Charts is with simple JavaScript that you embed in your web page. You load some Google Chart libraries, list the data to be charted, select options to customize your chart, and finally create a chart object with an id that you choose. Then, later in the web page, you create a < div> with that id to display the Google Chart. <a href="https://developers.google.com/chart/interactive/docs">read more</a></p>
+    </div>
+    <!-- pie chart -->
+    <div class="description">
+      <h1>Pie Chart</h1>
+      <p>A pie chart is a circular statistical graphic used to represent categorical data in proportions. Each slice of the pie corresponds to a category and its size is proportional to its percentage of the whole. Pie charts are useful for illustrating relative quantities at a glance, making them ideal for showing distributions in survey results, financial breakdowns, or any data where components contribute to a total.</p>
+
+       <p> However, in academic and professional settings, pie charts are sometimes criticized for being less effective than bar charts or line graphs, particularly when comparing multiple datasets or displaying small differences between categories. Proper labeling and color differentiation are essential to ensure clarity in interpretation. <a href="#">read more</a></p>
+    </div>
+    <div class="chart" id="piechart"></div>
+    <!-- line chart -->
+    <div class="description">
+      <h1>Line Charts: Visualizing Data Trends Over Time</h1>
+      <p>A line chart is a graphical representation of numerical data using points connected by lines. It is commonly used to illustrate trends, fluctuations, and relationships over time. The x-axis typically represents a time variable (such as years, months, or days), while the y-axis displays the measured values.</p>
+
+      <p>Line charts are particularly effective for identifying patterns in continuous data, making them useful in fields such as economics, science, and business analysis. They allow for easy comparisons between multiple datasets by plotting multiple lines within the same graph. <a href="#">read more</a></p>
+    </div>
+    <div class="chart" id="linechart_material"></div>
+    <!-- column Chart -->
+    <div class="description">
+      <h1>Column Charts: A Clear Representation of Categorical Data</h1>
+      <p>A column chart is a type of bar chart where data is represented using vertical bars. Each bar corresponds to a category, with its height indicating the value or frequency of that category. Column charts are widely used in business, finance, and research to compare different groups or track changes over time.</p>
+      <h2>Key Features:</h2>
+      <p>Vertical bars: Each bar represents a distinct category.
+
+        X-axis: Displays categories (e.g., months, products, regions).
+        
+        Y-axis: Represents numerical values (e.g., sales, population, percentages).
+        
+        Comparison: Useful for comparing multiple datasets side by side.</p>
+        <p>Column charts are particularly effective when visualizing trends over time or comparing discrete groups. They provide a straightforward way to interpret data at a glance.</p>
+    </div>
+    <div class="chart" id="columnchart_material"></div>
+
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="script/charts.js"></script>
+</body>
+</html>
